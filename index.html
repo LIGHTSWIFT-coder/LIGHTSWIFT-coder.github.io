@@ -1,217 +1,85 @@
-<!-- © LIGHTSWIFT 2020 - All rights reserved -->
-
 <!DOCTYPE html>
-<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="ru">
-<!--<![endif]-->
-
+<html lang="ru">
 <head>
+  <meta charset="utf-8">
+  <title>LIGHTSWIFT</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Главная - LIGHTSWIFT</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <link href="img/favicon.jpg" rel="icon">
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
+  <link href="css/style.css" rel="stylesheet">
 
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
-    <link rel="icon" href="favicon.jpg" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/82f4b3e2ee.js" crossorigin="anonymous"></script>
 
 </head>
 
-<!--   Ну что? Интересно в коде копаться? Ладно, не буду меешать. :)   -->
+<body data-spy="scroll" data-offset="0" data-target="#theMenu">
 
-<body id="top">
+  <!-- Menu -->
+  <nav class="menu" id="theMenu">
+    <div class="menu-wrap">
+      <h1 class="logo"><a href="index.html#home" class="smoothscroll">LIGHTSWIFT</a></h1>
+      <a href="#home" class="smoothscroll">Начало</a>
+      <a href="#about" class="smoothscroll">Обо мне</a>
+      <a href="https://youtube.com/c/LIGHTSWIFT"><i class="fab fa-youtube"></i></a>
+      <a href="https://t.me/LIGHTSWIFT"><i class="fab fa-telegram-plane"></i></a>
+    </div>
 
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
+    <!-- Menu button -->
+    <div id="menuToggle"><i class="fa fa-bars"></i></div>
+  </nav>
 
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img id="main-logo" src="images/logo.png" alt="Homepage">
-            </a>
+  <!-- ========== HEADER SECTION ========== -->
+  <section id="home" name="home"></section>
+  <div id="headerwrap">
+    <div class="container">
+      <div class="logo">
+        <img src="img/logo.png">
+      </div>
+      <br>
+      <div class="row">
+        <h1>ДОБРО ПОЖАЛОВАТЬ!</h1>
+        <br>
+        <h3>Привет, я Программист-Ютубер. Что вы желаете?</h3>
+        <br>
+        <br>
+        <div class="col-lg-6 col-lg-offset-3">
         </div>
+      </div>
+    </div><!-- /container -->
+  </div><!-- /headerwrap -->
 
-        <nav class="header-nav">
-
-            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
-
-            <div class="header-nav__content">
-                <h3>Меню</h3>
-                
-                <ul class="header-nav__list">
-                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Главная</a></li>
-                    <li><a class="smoothscroll"  href="#about" title="about">Обо мне</a></li>
-                    <li><a class="smoothscroll"  href="#skill-bars" title="about">Что я умею</a></li>
-                </ul>
-    
-                <p>© LIGHTSWIFT 2020 - All rights reserved.</p>
-    
-                <ul class="header-nav__social">
-                    <li>
-                        <a href="https://youtube.com/c/LIGHTSWIFT"><i class="fa fa-youtube"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://t.me/LIGHTSWIFT_DISCUSS"><i class="fa fa-telegram"></i></a>
-                    </li>
-                </ul>
-
-            </div> <!-- end header-nav__content -->
-
-        </nav>  <!-- end header-nav -->
-
-        <a class="header-menu-toggle" href="#0">
-            <span class="header-menu-text">Меню</span>
-            <span class="header-menu-icon"></span>
-        </a>
-
-    </header> <!-- end s-header -->
-
-
-    <!-- home
-    ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3840 data-natural-height=2160 data-position-y=center>
-
-        <div class="overlay"></div>
-        <div class="shadow-overlay"></div>
-
-        <div class="home-content">
-
-            <div class="row home-content__main">
-
-                <h3>Добро Пожаловать, на сайт!</h3>
-
-                <h1>
-                    Привет! <br>
-                    Я Web-программист <br>
-                    В свободное время, выкладаваю <br>
-                    Видеоролики на свой <a href="https://youtube.com/c/LIGHTSWIFT" title="YouTube - LIGHTSWIFT">YouTube Канал</a> </h1>
-
-                <div class="home-content__buttons">
-                    <a href="#skill-bars" class="smoothscroll btn btn--stroke">
-                        Что я умею
-                    </a>
-                    <a href="#about" class="smoothscroll btn btn--stroke">
-                        Обо мне
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="home-content__scroll">
-                <a href="#about" class="scroll-link smoothscroll">
-                    <span>Листай ниже</span>
-                </a>
-            </div>
-
-            <div class="home-content__line"></div>
-
-        </div> <!-- end home-content -->
-
-
-        <ul class="home-social">
-            <li>
-                <a href="https://youtube.com/c/LIGHTSWIFT"><i class="fa fa-youtube" aria-hidden="true"></i><span>YouTube</span></a>
-            </li>
-            <li>
-                <a href="https://t.me/LIGHTSWIFT_DISCUSS"><i class="fa fa-telegram" aria-hidden="true"></i><span>Telegram</span></a>
-            </li>
-        </ul> 
-        <!-- end home-social -->
-
-    </section> <!-- end s-home -->
-
-
-    <!-- about
-    ================================================== -->
-    <section id='about' class="s-about">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead subhead--dark">Обо мне</h3>
-                <h1 class="text-logo">LIGHTSWIFT</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row about-desc" data-aos="fade-up">
-            <div class="col-full">
-                <p>
-                Я Web, Python, C# программист/разработчик. В свободное время программирую или введу свой YouTube Канал. Программирую примерно 1,5 года. Это мой первый сайт! :D
-                </p>
-            </div>
-        </div> <!-- end about-desc -->
-
-        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
-                
-            <div class="col-block stats__col ">
-                <div class="stats__count">5</div>
-                <h5>Дней подготовки</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">312</div>
-                <h5>Дней практики</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">421</div>
-                <h5>День изучения</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">91435</div>
-                <h5>Ошибок и Предупреждений</h5> 
-            </div>
-
-        </div> <!-- end about-stats -->
-
-        <div class="about__line"></div>
-
-    </section> <!-- end s-about -->
-
-    <!-- skill bars
-    ================================================== -->
-    <section id="skill-bars">
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" name="about"></section>
+  <div id="f">
+    <div class="container">
+      <div class="row">
+        <h3>ЧУТОЧКУ ОБО МНЕ</h3>
+        <p class="centered"><i class="fas fa-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
         
-        <h3 class="skill-bars-text">Что я умею</h3>
+        <!-- INTRO INFO-->
+        <div class="col-lg-6 col-lg-offset-3">
+          <p>Как уже известно я - Программист. А какой? Больше скорее ПО-Программист, хотя и Web-а во мне тоже не мало :)</p>
+          <p>Программистом уже являюсь примерно - 2 года.</p>
+          <p>Также как я и говорил, я ещё и - Ютубер. Кому интереснен мой канал, <a href="http://youtube.com/c/LIGHTSWIFT">Вот он</a>. Посетите, обязательно! :)</p>
+          <p>Ну и ещё чуть-чуть информации! Моим первым языком<br>был - Python (Оно и неудивительно). Я из Казахстана, и<br>передаю - Привет, соседи!</p>
+        </div>                
+      </div>
+    </div><!-- /container -->
+  </div><!-- /f -->
 
-        <img class="skill-bars-img" src="images/coding.jpg" width="700" height="368" alt="Coding">
-    
-        <div class="container-skills">
-            <ul>
-                <li class="html skills">HTML</li>
-                <li class="css skills">CSS</li>
-                <li class="py skills">Python</li>
-                <li class="csh skills">C#</li>
-                <li class="js skills">JavaScript</li>
-            </ul>
-        </div>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
 
-    </section> <!-- end s-skills -->
-
-    <!-- JavaScript
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
 
 </body>
-
 </html>
